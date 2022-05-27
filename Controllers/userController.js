@@ -21,6 +21,7 @@ exports.registerUser = asyncErrors(async (req, res, next) => {
   res.status(200).json({
     success: true,
     user,
+    isRegistered: true,
     message: "User Registered Successfully",
   });
 });

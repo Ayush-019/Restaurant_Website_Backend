@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
   },
 
   TableNo: {
-    type: Number,
+    type: String,
     required: [true, "Please Enter your TableNo.!"],
   },
 
