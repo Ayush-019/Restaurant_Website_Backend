@@ -2,16 +2,14 @@ const Order = require("../Models/orderModel");
 const asyncErrors = require("../Middlewares/asyncErrors");
 
 exports.newOrder = asyncErrors(async (req, res, next) => {
-  const { orderItems, itemsPrice, totalPrice } =
-    req.body;
+  const { orderItems, itemsPrice, totalPrice, name, TableNo } = req.body;
 
   const order = await Order.create({
-    // name,
-    // MobileNo,
-    // TableNo,
     orderItems,
     itemsPrice,
     totalPrice,
+    name,
+    TableNo,
   });
 
   res.status(201).json({

@@ -7,11 +7,11 @@ const orderSchema = new mongoose.Schema({
     minLength: [3, "Name must have more than 3 characters"],
   },
 
-  MobileNo: {
-    type: String,
-    required: [false, "Please MobileNo.!"],
-    // unique: true,
-  },
+  // MobileNo: {
+  //   type: String,
+  //   required: [false, "Please MobileNo.!"],
+  //   // unique: true,
+  // },
 
   TableNo: {
     type: String,
