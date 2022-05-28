@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema({
   MobileNo: {
     type: String,
     required: [true, "Please Enter your MobileNo.!"],
-    unique: true,
   },
 
   TableNo: {

@@ -18,11 +18,12 @@ const PORT = process.env.PORT || 8000;
 // Importing Routes
 const itemRoute = require("./Routes/itemsRoute");
 const userRoute = require("./Routes/userRoute");
+const orderRoute = require("./Routes/orderRoute");
 
 //calling routes
 app.use("/api/r1", itemRoute);
 app.use("/api/r1", userRoute);
-
+app.use("/api/r1", orderRoute);
 
 app.get("/", (req, res) => {
   console.log("Server is running");
